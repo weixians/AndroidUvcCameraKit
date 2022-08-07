@@ -22,24 +22,24 @@ public class GGCamera {
     }
 
     /**
+     * preview resolution(width)
+     * if your camera does not support specific resolution and mode,
+     * {@link UVCCamera#setPreviewSize(int, int, int)} throw exception
+     */
+    public static int PREVIEW_WIDTH = 640;
+    /**
+     * preview resolution(height)
+     * if your camera does not support specific resolution and mode,
+     * {@link UVCCamera#setPreviewSize(int, int, int)} throw exception
+     */
+    public static int PREVIEW_HEIGHT = 360;
+    /**
      * set true if you want to record movie using MediaSurfaceEncoder
      * (writing frame data into Surface camera from MediaCodec
      * by almost same way as USBCameratest2)
      * set false if you want to record movie using MediaVideoEncoder
      */
     private static final boolean USE_SURFACE_ENCODER = true;
-    /**
-     * preview resolution(width)
-     * if your camera does not support specific resolution and mode,
-     * {@link UVCCamera#setPreviewSize(int, int, int)} throw exception
-     */
-    private static final int PREVIEW_WIDTH = 640;
-    /**
-     * preview resolution(height)
-     * if your camera does not support specific resolution and mode,
-     * {@link UVCCamera#setPreviewSize(int, int, int)} throw exception
-     */
-    private static final int PREVIEW_HEIGHT = 360;
     /**
      * preview mode
      * if your camera does not support specific resolution and mode,
